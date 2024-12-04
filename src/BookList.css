@@ -1,0 +1,184 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Modern font for body text */
+    background-color: #000000; /* Light background */
+    color: #333;
+    line-height: 1.6;
+    padding: 0 10%;
+  }
+  
+  .book-list {
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    font-size: 40px;
+    color: #e5fa00;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Add Book Button */
+  .add-book-btn {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green button */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-book-btn:hover {
+    background-color: #388e3c; /* Darker green */
+    transform: scale(1.05);
+  }
+  
+  .book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Book Item */
+  .book-item {
+    margin: 10px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-item h3 {
+    font-family: 'Montserrat', sans-serif; /* Stylish font for book title */
+    color: #000000; /* Green color */
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .book-item h3:hover {
+    color: #388e3c; /* Darker green on hover */
+  }
+  
+  .book-item p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .book-item p:first-child {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .book-item p:nth-child(2) {
+    color: #00d9ff; /* Tomato color for ISBN */
+    font-weight: bold;
+  }
+  
+  /* Book Action Buttons */
+  .book-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .book-actions button {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .book-actions button:hover {
+    transform: scale(1.05);
+  }
+  
+  .book-actions button:nth-child(1) {
+    background-color: #1976d2; /* Blue for View */
+  }
+  
+  .book-actions button:nth-child(1):hover {
+    background-color: #0d47a1; /* Darker blue */
+  }
+  
+  .book-actions button:nth-child(2) {
+    background-color: #ffa000; /* Amber for Edit */
+  }
+  
+  .book-actions button:nth-child(2):hover {
+    background-color: #ff6f00; /* Darker amber */
+  }
+  
+  .book-actions button:nth-child(3) {
+    background-color: #d32f2f; /* Red for Delete */
+  }
+  
+  .book-actions button:nth-child(3):hover {
+    background-color: #b71c1c; /* Darker red */
+  }
+  
+  .book-list .no-books {
+    font-size: 18px;
+    color: #ff6347; /* Red for no books message */
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
